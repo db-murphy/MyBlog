@@ -44,13 +44,13 @@ define(function (require,exports,module){
             "class":""
         },
         {
-            "id" : "4",
+            "id" : "5",
             "url" : "blog_life.html#5",
             "text" : "扯淡",
             "class":""
         },
         {
-            "id" : "4",
+            "id" : "6",
             "url" : "blog_manage.html#6",
             "text" : "管理",
             "class":""
