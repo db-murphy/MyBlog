@@ -3,14 +3,15 @@ define(function (require,exports,module){
      /**
      * 请求IP
      */
-    var BasePath ="http://218.247.15.102/appfuse_emm_backend/api/v1/";
+    var BasePath ="http://192.168.1.103:3000/my_blog/api/";
 
     /**
     * 接口
     * @param  loginUrl     登陆接口
     **/
     var httpPort = {
-        loginUrl:'user/login.json'
+        cssGetListUrl:'css/get',
+        cssSetListUrl:'css/set'
     };
 
     /**

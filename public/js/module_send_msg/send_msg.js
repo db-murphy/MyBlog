@@ -1,22 +1,30 @@
 define(function (require,exports,module){
 
 	/**
-	* 组装登陆请求数据
+	* 组装发表文章参数
 	**/
-	function login_send_msg(){
+	function push_artical__msg(){
 
-		var user_name = $('#username').val();
-        var pwd = $('#passwords').val();
+		var sTitle = $('#articleTitle').val();
+		var sContent = $('#textareaInput').val();
+		var oSelect = $('#arcicleType').get(0);
+		var sType = oSelect.options[oSelect.selectedIndex].getAttribute('type');
+
+		if(!sTitle || !sContent){
+			alert('必填信息不能为空');
+			return false;
+		};
 
         return {
-        	username: user_name,
-			password: pwd
+        	title: sTitle,
+			content: sContent,
+			type:sType
         }
 
 	};
 
 	module.exports = {
-		login_send_msg:login_send_msg
+		push_artical__msg:push_artical__msg
 	};
 
 });

@@ -13,7 +13,7 @@ define(function (require,exports,module){
 		global : true,
 		async: true,
 		error : function(xhr, status, e) {
-			showAlert('请求出错','','');
+			//showAlert('请求出错','','');
 		},
 		complete : function(xhr, status) {
 			// 隐藏Loading框
@@ -21,7 +21,7 @@ define(function (require,exports,module){
 		},
 		beforeSend : function(request) {
 
-			var tokenId = window.sessionStorage.getItem('TOKENID');
+			/*var tokenId = window.sessionStorage.getItem('TOKENID');
 			if (utils.NullToStr(tokenId) == "") {
 				var url = window.location.href;
 				if(url.indexOf("login.html")<0){
@@ -37,7 +37,7 @@ define(function (require,exports,module){
 				if(Boolean(bl) && bl!="false"){
 					// 显示Loading框
 				}
-			};
+			};*/
 		},
 		success : function(data, textStatus, jqXHR) {
 			verification(data, textStatus, jqXHR);
@@ -87,6 +87,7 @@ define(function (require,exports,module){
 	*封装http请求
 	**/
 	function https(json,httpType,url,dataFormat,fnScc){
+		
 		$.ajax({
 			type: httpType,
 			url: variables.BasePath + url,

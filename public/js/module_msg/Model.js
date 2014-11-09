@@ -3,7 +3,7 @@ define(function (require,exports,module){
 	/**
 	* 依赖模块
 	**/
-	var common = require('module_common/common.js');
+	var common = require('module_common/common');
 	
 	/**
 	*登陆请求
@@ -13,8 +13,6 @@ define(function (require,exports,module){
 	};
 
 	module.exports = {
-
-		httpActive:httpActive
-		
+		httpActive:httpActive	
 	};
 });

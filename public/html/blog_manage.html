@@ -14,27 +14,27 @@
 <body>
 	<div id="pageWrap" class="container-fluid">
 		<div class="row-fluid margin-left-15 margin-right-15">
-			<form role="form">
+			<form role="form" id="formBox">
 			  <div class="form-group">
 			  	<label>选择板块</label>
-			  	<select class="form-control">
-				  <option>css</option>
-				  <option>javascript</option>
-				  <option>设计</option>
-				  <option>node</option>
-				  <option>mongoodb</option>
-				  <option>扯淡</option>
+			  	<select id="arcicleType" class="form-control">
+				  <option type="cssForm">css</option>
+				  <option type="javascriptForm">javascript</option>
+				  <option type="design">设计</option>
+				  <option type="node">node</option>
+				  <option type="mongoodb">mongoodb</option>
+				  <option type="life">生活</option>
 				</select>
 			  </div>
 			  <div class="form-group">
 			    <label for="exampleInputPassword1">标题</label>
-			    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="请输入标题">
+			    <input type="text" class="form-control" id="articleTitle" placeholder="请输入标题">
 			  </div>
 			  <div class="form-group">
 			  	<label>输入内容</label>
-			    <textarea class="form-control" rows="3"></textarea>
+			    <textarea class="form-control" id="textareaInput" rows="3"></textarea>
 			  </div>
-			  <button type="submit" class="btn btn-default">Submit</button>
+			  <button type="submit" id="submitBtn" class="btn btn-default">Submit</button>
 			</form>
 		</div>
 	</div>
