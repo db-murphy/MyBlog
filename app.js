@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 
-var router_csslist = require('./routes/router_css_list');
+var router_articlelist = require('./routes/router_article_list');
 
 var app = express();
 
@@ -45,7 +45,7 @@ app.all('', function(req, res, next) {
 /**
  *css文章列表路由
  */
-app.use('/my_blog/api/css',router_csslist);
+app.use('/my_blog/api/article',router_articlelist);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

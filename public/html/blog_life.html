@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My-blog</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+	<script src="../framework/js/jquery.min.js"></script>
+	<script src="../framework/js/bootstrap.js"></script>
+	<script src="../framework/js/sea.js"></script>
+	<link rel="stylesheet" href="../framework/css/framework_main.css" />
+	<link rel="stylesheet" href="../css/css_common/css_common.css" />
+	<link rel="stylesheet" href="../css/css_index/css_index.css" />
+</head>
+<body>
+	<div id="pageWrap" htmlType="lifeForm" class="container-fluid">
+		<div class="articleBox row-fluid margin-left-15 margin-right-15">
+			<div id="alertMsg" class="alert alert-success displayHidden" role="alert">暂无数据</div>
+		</div>
+		<!-- <div class="row-fluid">
+			<nav align="center">
+			  <ul class="pagination">
+			    <li><a href="#">&laquo;</a></li>
+			    <li><a href="#">1</a></li>
+			    <li><a href="#">2</a></li>
+			    <li><a href="#">3</a></li>
+			    <li><a href="#">4</a></li>
+			    <li><a href="#">5</a></li>
+			    <li><a href="#">&raquo;</a></li>
+			  </ul>
+			</nav>
+		</div> -->
+	</div>
+</body>
+<script>
+	/**
+	*配置基础路径
+	**/
+	seajs.config({
+	  base: "../js"
+	});
+
+	/**
+	*进入主模块
+	**/
+	seajs.use('module_article/article_main.js');
+</script>
+</html>

@@ -1,6 +1,6 @@
-define(function (require,exports,module){
+define(function (require, exports, module){
 
-	function showCssArticalList(arr){
+	function showArticalList(arr){
 		if(arr.length){
 			var htmlArr = [];
 
@@ -18,14 +18,13 @@ define(function (require,exports,module){
 				htmlArr.push(html);
 			};
 
-			$('#cssListBox').html(htmlArr.join(''));
+			$('.articleBox').html(htmlArr.join(''));
 		}else{
 			$('#alertMsg').removeClass('displayHidden').addClass('displayShow');
 		};
 	};
 
 	module.exports = {
-		showCssArticalList:showCssArticalList
+		showArticalList:showArticalList
 	};
-
 });

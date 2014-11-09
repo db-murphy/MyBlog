@@ -27,8 +27,6 @@ router.post('/set', function(req, res) {
 		content:getReqJson.content
 	});
 
-	console.log(438498494948948);
-
 	articalBset.save(function(err,data){
 
 		if(err){
@@ -42,10 +40,6 @@ router.post('/set', function(req, res) {
 			});
 		};
 	});
-
-	/*res.status(200).json({
-		code:0
-	});*/
 
 });
 

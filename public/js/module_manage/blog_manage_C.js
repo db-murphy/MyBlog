@@ -17,7 +17,7 @@ define(function (require, exports, module){
 				return;
 			};
 
-			HTTP.httpActive(send_json,'POST',oVariables.httpPort.cssSetListUrl,'json',function(data){
+			HTTP.httpActive(send_json,'POST',oVariables.httpPort.setArticleListUrl,'json',function(data){
 				if(data.code == 0){
 					alert('发表成功');
 				}else{

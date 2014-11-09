@@ -10,8 +10,8 @@ define(function (require,exports,module){
     * @param  loginUrl     登陆接口
     **/
     var httpPort = {
-        cssGetListUrl:'css/get',
-        cssSetListUrl:'css/set'
+        getArticleListUrl:'article/get',
+        setArticleListUrl:'article/set'
     };
 
     /**
