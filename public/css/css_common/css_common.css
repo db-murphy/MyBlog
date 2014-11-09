@@ -1,0 +1,138 @@
+/**
+*lodding模态框
+**/
+.mylodding .modal-dialog{
+  width:200px;
+  height:80px;
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin:-40px 0px 0px -100px;
+}
+.mylodding .modal-content{
+  height:80px; 
+  background:#fff;
+}
+.mylodding .myContent{
+  background:url(../../img/common/loadding.gif) left center no-repeat;
+  width:120px;
+  height:80px;
+  margin:0 auto;
+  line-height:80px;
+  text-align:right;
+}
+
+
+
+/**
+*自定义分页主题
+**/
+.mypaginationBox .pagination{
+  display:inline-block;
+  float:right;
+}
+.mypaginationBox .paginationText{
+  display:inline-block;
+  float:right;
+  height:34px;
+  line-height:34px;
+  padding-right:10px;
+}
+
+
+
+/**
+*顶部固定导航栏
+**/
+.privite-navbar-fixed .navbar-collapse{
+	padding:0px 15px;
+}
+
+/**
+*自定义脚部主题
+**/
+.bs-footer{
+	text-align:center;
+	margin:20px 0px;
+	color: #777;
+	font-size:12px;
+  position:fixed;
+  bottom:0px;
+  width:100%;
+
+}
+
+
+/**
+ * 清除内边距
+**/
+.padding_none{
+  padding:none !important;
+}
+.margin_none{
+  margin:0px !important;
+}
+
+/**
+*上边距
+**/
+.padding-top-7{
+  padding-top:7px;
+}
+/**
+*左边距
+**/
+.padding-left-15{
+  padding-left:15px;
+}
+.margin-left-15{
+  margin-left:15px;
+}
+/**
+*右边距
+**/
+.padding-right-15{
+  padding-left:15px;
+}
+.margin-right-15{
+  margin-right:15px;
+}
+
+
+/**
+*字体颜色类
+**/
+.font-red{
+  color:red;
+}
+.font-blue{
+  color:blue;
+}
+.font-grey{
+  color:#ccc;
+}
+
+/**
+*浮动类
+**/
+.float-right{
+  float:right;
+}
+
+/**
+*自定义panel类
+**/
+.hasButtonHead{
+  position:relative;
+}
+.hasButtonHead .panel-title{
+  display:inline-block;
+}
+
+/**
+*文字居中类
+**/
+.text_center{
+  text-align:center;
+}
+

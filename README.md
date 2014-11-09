@@ -1,7 +1,7 @@
 
 #My-blog
 
-My-blog是基于express + mongodb的博客项目
+My-blog是基于`bootsrap` `seajs` `jquery` `express` `mongodb`构建自己的博客
 
 ##运行
 

@@ -1,0 +1,26 @@
+/**
+*登陆居中盒子
+**/
+.container-login{
+	height:400px;
+	position:absolute;
+	width:600px;
+	left:50%;
+	top:50%;
+	margin:-200px 0px 0px -300px;
+}
+
+
+/**
+*登陆表单盒子
+**/
+.login-form{
+	border:1px solid #ccc;
+	border-radius:10px;
+	padding:30px;
+	width:500px;
+	position:absolute;
+	left:50%;
+	top:100px;
+	margin-left:-250px;
+}

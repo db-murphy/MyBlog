@@ -1,0 +1,14 @@
+/**
+*主页logo
+**/
+.logoIndex{
+  width:224px;
+  height:190px;
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin:-95px 0px 0px -112px;
+  background:url(../../img/common/logo.jpg) no-repeat center center;
+  background-size:225px 189px;
+  z-index:-1;
+}
