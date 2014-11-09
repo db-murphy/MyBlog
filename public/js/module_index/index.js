@@ -18,7 +18,7 @@ define(function (require,exports,module){
 	/**
 	* 生成页脚
 	**/
-	common.create_footer();
+	common.create_footer(true);
 
 	/**
 	* 生成用户名

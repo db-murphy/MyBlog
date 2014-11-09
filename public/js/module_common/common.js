@@ -188,9 +188,12 @@ define(function (require,exports,module){
 	/**
 	 * 生成页脚
 	**/
-	function create_footer() {
+	function create_footer(bolean) {
 		var html = variables.menuhtmlJson.footerHtml.join('');
 		$('#pageWrap').append(html);
+		if(bolean){
+			$('.bs-footer').addClass('footer-absolute');
+		};
 	};
 
 	/**

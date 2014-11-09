@@ -53,13 +53,15 @@
 **/
 .bs-footer{
 	text-align:center;
-	margin:20px 0px;
 	color: #777;
 	font-size:12px;
-  position:fixed;
-  bottom:0px;
   width:100%;
-
+  margin:20px 0px;
+  background:#fff;
+}
+.footer-absolute{
+  position:absolute;
+  bottom:0px;
 }
 
 
