@@ -7,11 +7,12 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 
 var router_articlelist = require('./routes/router_article_list');
+var router_answerlist = require('./routes/router_answer_list');
 
 var app = express();
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:6000/myblogDB');
+mongoose.connect('mongodb://localhost:7000/myblogDB');
 var db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'connection error:'));
@@ -42,10 +43,11 @@ app.all('', function(req, res, next) {
     else  next();
 });
 
-/**
- *css文章列表路由
- */
+//文章列表路由
 app.use('/my_blog/api/article',router_articlelist);
+
+//回复列表路由
+app.use('/my_blog/api/answer',router_answerlist);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

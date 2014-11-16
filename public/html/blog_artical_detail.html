@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My-blog</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+	<script src="../framework/js/jquery.min.js"></script>
+	<script src="../framework/js/bootstrap.js"></script>
+	<script src="../framework/js/sea.js"></script>
+	<link rel="stylesheet" href="../framework/css/framework_main.css" />
+	<link rel="stylesheet" href="../css/css_common/css_common.css" />
+	<link rel="stylesheet" href="../css/css_index/css_index.css" />
+</head>
+<body>
+	<div id="pageWrap" class="container-fluid">
+		<div class="page">
+			<div class="page-header">
+			  <h1></h1>
+			</div>
+			<div class="page-body">
+			</div>
+			<div id="answer" class="panel panel-success">
+			  <div class="panel-heading">评论</div>
+			  <div class="panel-body">
+			    <!-- <div class="media">
+				  <a class="media-left" href="#">
+				    <img data-src="holder.js/64x64" data-holder-rendered="true" src="../img/common/headPhoto.svg">
+				  </a>
+				  <div class="media-body">
+				    <h4 class="media-heading">Middle aligned media</h4>
+				    <p>jdkjsjdkjkjfk</p>
+				  </div>
+				</div> -->
+			  </div>
+			</div>
+			<form id="anserForm" role="form">
+			  <div class="form-group">
+			    <label>昵称</label>
+			    <input type="text" class="form-control" id="nickerName" placeholder="输入昵称">
+			  </div>
+			  <div class="form-group">
+			    <label>内容:</label>
+			    <textarea id="answerContent" class="form-control" rows="3" placeholder="评论内容"></textarea>
+			  </div>
+			  <button type="submit" class="btn btn-default">评论</button>
+			</form>
+		</div>
+	</div>
+</body>
+<script>
+	/**
+	*配置基础路径
+	**/
+	seajs.config({
+	  base: "../js"
+	});
+
+	/**
+	*进入主模块
+	**/
+	seajs.use('module_article_detail/detail_main.js');
+</script>
+</html>

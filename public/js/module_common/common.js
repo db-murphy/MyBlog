@@ -144,7 +144,7 @@ define(function (require,exports,module){
 		var html3 = variables.menuhtmlJson.header2Arr.join('');
 		var html4 = createMainList(variables.userMenu);
 		var html5 = variables.menuhtmlJson.header3Arr.join('');
-		var new_html = html1 + html2 + html3 + html4 + html5;
+		var new_html = html1 + html2 + html5;
 
 		$('#pageWrap').prepend(new_html);
 	};

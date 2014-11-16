@@ -182,11 +182,23 @@ define(function (require,exports,module){
 		$("#loadingModalMes").attr("isShow",bl);
 	};
 
+
+	function cloneJson (json){
+		var newJson = {}
+			,attr;
+
+		for(attr in json){
+			newJson[attr] = json[attr];
+		};
+
+		return newJson;
+	};
 	module.exports = {
 
 		setLoad:setLoad,
 		ErrorInfo:ErrorInfo,
-		NullToStr:NullToStr
+		NullToStr:NullToStr,
+		cloneJson:cloneJson
 		
 	};
 });

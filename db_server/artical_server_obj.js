@@ -7,12 +7,6 @@ var CssListSchema = new Schema({
     content: String
 });
 
-CssListSchema.methods.shhhhhh = function() {
-    var greeting = this.title;
-    return greeting;
-  	console.log(greeting);
-};
-
 /**
  *css表
  */

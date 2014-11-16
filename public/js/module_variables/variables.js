@@ -11,7 +11,10 @@ define(function (require,exports,module){
     **/
     var httpPort = {
         getArticleListUrl:'article/get',
-        setArticleListUrl:'article/set'
+        setArticleListUrl:'article/set',
+        getArticleDetailUrl:'article/getDetail',
+        setAnswerUrl: 'answer/set',
+        getAnswerUrl: 'answer/get'
     };
 
     /**
@@ -48,12 +51,6 @@ define(function (require,exports,module){
             "id" : "5",
             "url" : "blog_life.html#5",
             "text" : "扯淡",
-            "class":""
-        },
-        {
-            "id" : "6",
-            "url" : "blog_manage.html#6",
-            "text" : "管理",
             "class":""
         }
     ];
