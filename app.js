@@ -3,13 +3,8 @@ var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
-
-
 var bodyParser = require('body-parser');
 var session = require('express-session');
-
-
-
 var router_articlelist = require('./routes/router_article_list');
 var router_answerlist = require('./routes/router_answer_list');
 
