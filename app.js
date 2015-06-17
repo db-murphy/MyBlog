@@ -10,6 +10,13 @@ var router_answerlist = require('./routes/router_answer_list');
 
 var app = express();
 
+
+
+
+
+
+
+
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:7000/myblogDB');
 var db = mongoose.connection;
